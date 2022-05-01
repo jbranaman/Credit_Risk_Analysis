@@ -15,7 +15,7 @@ The following is the results for the different models providing these scores:
 
 * The balanced accuracy score is 64.9%.
 * High risk loans had a low precision score indicating a large number of false positives. Low risk loans had a very high precision score with all accurately predicted.
-* The model was better at predicting positive low risk loans at .68 than high risk loans at .62.
+* The model was better at predicting positive low risk loans based on the recall score at .68 than high risk loans at .62.
 
 ### SMOTE Oversampling
 <img width="566" alt="SMOTE Oversampling Balanced Accuracy Score" src="https://user-images.githubusercontent.com/96451672/166148586-6c17b74f-f4da-4eba-87be-db6dfc9fc65a.png">
@@ -47,7 +47,7 @@ The following is the results for the different models providing these scores:
 
 * The balanced accuracy score is 78.7%.
 * The precision score adjusted slightly higher for high risk loans but still remained low at .04. The precision score for low risk loans remained the same with all accurately predicted.
-* The recall score for low risk loans dramatically increased to .90 while the recall score for high risk loans remained relatively similar at .67.
+* The recall score for low risk loans dramatically increased to .91 while the recall score for high risk loans remained relatively similar at .67.
 
 
 ### Easy Ensemble AdaBoost Classifier
@@ -56,4 +56,15 @@ The following is the results for the different models providing these scores:
 
 * The balanced accuracy score is 92.5%.
 * The precision score adjusted slightly higher again for high risk loans at .07 and low risk loans all accurately predicted.
-* The recall score for both low risk and high risk loans dramatically increased with low risk loans at .94 and high risk loans remaat .91.
+* The recall score for both low risk and high risk loans increased with low risk loans at .94 and high risk loans at .91.
+
+## Summary
+The results for the different models can be summed up as follows:
+* Naive random oversampling had a moderate level of accuracy in predicting credit risk based on the balanced accuracy score. In the predicting of high risk loans, there is indication that a high amount of false positives resulted based on the precision score. The results for the recall score show that the model was better at predicting positive low risk loans.
+* SMOTE oversampling was similar to naive random oversampling. It had a moderate level of accuracy in predicting credit risk based on the balanced accuracy score. Similarly, high risk loans had a low precision score indicating a large number of false positives and low risk loans had a very high precision score with all accurately predicted. The model was also better at predicting positive low risk loans than high risk loans.
+* Undersampling had the lowest accuracy in predicting credit risk based on the balanced accuracy score. The precision scores were the same as the oversampling models with high risk loans having a low precision score indicating a large number of false positives and low risk loans having a very high precision score with all accurately predicted. The recall score for high risk loans remained relatively the same as the oversampling models and the score for low risk loans dropped indicating lower accuracy in predicting positive low risk loans.
+* Combination (over and under) sampling had a simliar accuracy in predicting credit to the oversampling models. The precision scores remained the same as prior. The recall score for high risk loans increased indicating an improvement in predicting positive high risk loans while the score for low risk loans remained lower.
+* Balanced random forest classifier had an increased accuracy for predicting credit risk compared to the oversampling models, undersampling model and the combination sampling. The precision score improved high risk loans but only slightly while the precision score for low risk loans remained the same. There was dramatic increase in the recall score for low risk loans indicating more accurate prediction of positive low risk loans while the score for high risk loans remained relatively similar.
+* Easy ensemble AdaBoost classifier had the highest accuracy for predicting credit risk compared all other models. The precision score for high risk loans increased more but only slightly and the score for low risk loans remained the same. The recall score for both low risk and high risk loans increased indicating much greater accuracy in predicting positive loans.
+
+
