@@ -25,3 +25,22 @@ The following is the results for the different models providing these scores:
 * The precision scores were the same as the naive random oversampling model. High risk loans had a low precision score indicating a large number of false positives. Low risk loans had a very high precision score with all accurately predicted.
 * Like naive random oversampling, the model was better at predicting positive low risk loans at .66 than high risk loans at .63.
 
+### Undersampling
+<img width="511" alt="Undersampling Balanced Accuracy Score" src="https://user-images.githubusercontent.com/96451672/166149109-d00dec98-3c07-4b56-af73-ab69fac79530.png">
+<img width="841" alt="Undersampling Imbalanced Classification Report" src="https://user-images.githubusercontent.com/96451672/166149111-bb747a7f-f34e-43fa-84eb-ae8025301d23.png">
+
+* The balanced accuracy score is 52.9%.
+* The precision scores were again the same as both of the oversampling models. High risk loans had a low precision score indicating a large number of false positives. Low risk loans had a very high precision score with all accurately predicted.
+* While comparing to the oversampling models, the recall score for high risk loans remained higher at .61 and the recall score for low risk loans dropped quite a bit to .45 indicating lower accuracy in predicting positive low risk loans.
+
+### Combination (Over and Under) Sampling
+<img width="538" alt="Combination Sampling Balanced Accuracy Score" src="https://user-images.githubusercontent.com/96451672/166149717-bb63620d-8ded-4be8-8f5a-297b80e68dd5.png">
+<img width="817" alt="Combination Sampling Imbalanced Classfication Report" src="https://user-images.githubusercontent.com/96451672/166149722-5d9ac97b-14e5-4b63-8d9f-ba082fb40837.png">
+
+* The balanced accuracy score is 63.7%.
+* The precision scores were once again the same as both of the oversampling models and the undersampling model. High risk loans had a low precision score indicating a large number of false positives. Low risk loans had a very high precision score with all accurately predicted.
+* The recall score for high risk loans is again higher at .70 and the recall score for low risk loans is lower at .57 which continues to indicate lower accuracy in predicting positive low risk loans.
+
+
+
+
