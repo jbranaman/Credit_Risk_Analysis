@@ -41,6 +41,19 @@ The following is the results for the different models providing these scores:
 * The precision scores were once again the same as both of the oversampling models and the undersampling model. High risk loans had a low precision score indicating a large number of false positives. Low risk loans had a very high precision score with all accurately predicted.
 * The recall score for high risk loans is again higher at .70 and the recall score for low risk loans is lower at .57 which continues to indicate lower accuracy in predicting positive low risk loans.
 
+### Balanced Random Forest Classifier
+<img width="499" alt="Balanced Random Forest Classifier Balanced Accuracy Score" src="https://user-images.githubusercontent.com/96451672/166150040-0befbbc5-c316-4e1d-b099-fbb868f76237.png">
+<img width="818" alt="Balanced Random Forest Classifier Imbalanced Classification Report" src="https://user-images.githubusercontent.com/96451672/166150043-e61ddb15-9b0b-4676-9028-fc77335bcb42.png">
+
+* The balanced accuracy score is 78.7%.
+* The precision score adjusted slightly higher for high risk loans but still remained low at .04. The precision score for low risk loans remained the same with all accurately predicted.
+* The recall score for low risk loans dramatically increased to .90 while the recall score for high risk loans remained relatively similar at .67.
 
 
+### Easy Ensemble AdaBoost Classifier
+<img width="482" alt="Easy Ensemble AdaBoost Classifier Balanced Accuracy Score" src="https://user-images.githubusercontent.com/96451672/166150616-048bc3b8-18ca-46cb-bdec-64e0bc7de22a.png">
+<img width="807" alt="Easy Ensemble AdaBoost Classifier Imbalanced Classification Report" src="https://user-images.githubusercontent.com/96451672/166150622-4660ff26-fce0-482b-8aad-c5b4d69f33c0.png">
 
+* The balanced accuracy score is 92.5%.
+* The precision score adjusted slightly higher again for high risk loans at .07 and low risk loans all accurately predicted.
+* The recall score for both low risk and high risk loans dramatically increased with low risk loans at .94 and high risk loans remaat .91.
